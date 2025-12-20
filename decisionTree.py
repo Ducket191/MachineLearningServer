@@ -163,7 +163,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=.2, random_s
 classifier = DecisionTreeClassifier(minSampleSplit=5, maxDepth=7)
 classifier.fit(X_train, Y_train)
 
-Classifier = RandomForestClassifier(numberOfTree=100)
+Classifier = RandomForestClassifier(numberOfTree=50)
 Classifier.fit(X_train, Y_train)
 
 if __name__ == "__main__":
